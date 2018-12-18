@@ -304,18 +304,92 @@ ul {
             font-size: 12px;
             line-height: 1;
             padding: 15px;
+            font-weight: 300;
+            position: relative;
             cursor: pointer;
             i {
               transition: all .2s ease;
               font-size: 14px;
               margin-left: 6px;
+              position: relative;
+              top: 0;
             }
-            &.active {
+            &:hover {
               i {
-                transform: rotateZ(180deg);
+                top: 5px;
+                transition: all .2s ease;
+              }
+              .sub-options {
+                opacity: 1;
+                visibility: visible;
                 transition: all .2s ease;
               }
             }
+            .sub-options {
+              opacity: 0;
+              visibility: hidden;
+              position: absolute;
+              left: 0;
+              width: 200px;
+              background: lighten($color: #000000, $amount: 20);
+              color: #fff;
+              top: 100%;
+              max-height: 180px;
+              transition: all .2s ease;
+              .sub-option {
+                position: relative;
+                border-bottom: 1px solid rgba($color: #fff, $alpha: 0.4);
+                &:last-child {
+                  border: none;
+                }
+                label {
+                  font-size: 14px;
+                  width: 100%;
+                  padding: 12px;
+                  margin: 0;
+                  cursor: pointer;
+                  span {
+                    &:before {
+                      content: "";
+                      display: inline-block;
+                      width: 15px;
+                      height: 15px;
+                      border: 1px solid $primaryColor;
+                      border-radius: 50%;
+                      position: absolute;
+                      right: 15px;
+                    }
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      width: 9px;
+                      height: 9px;
+                      background: $primaryColor;
+                      border-radius: 50%;
+                      position: absolute;
+                      right: 18px;
+                      top: 15px;
+                      opacity: 0;
+                      transition: all .2s ease;
+                    }
+                  }
+                  input {
+                    float: right;
+                    position: absolute;
+                    opacity: 0;
+                    pointer-events: none;
+                    &:checked {
+                      &+span {
+                        &:after {
+                          opacity: 1;
+                          transition: all .2s ease;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            } 
           }
         }
       }

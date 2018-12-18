@@ -8,10 +8,11 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,600" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/malihu/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="vendors/themify/themify-icons.css">
 
   <link rel="stylesheet" href="css/global2.min.css">

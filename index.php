@@ -56,10 +56,146 @@
               <div class="option">
                 <span>AREA</span>
                 <i class="fas fa-angle-down"></i>
+                <div class="sub-options">
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Thamel</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Chettrapati</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Lazimpat</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>New Road</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Baneshwor</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Basantapur</span>
+                    </label>
+                  </div>
+                </div>
               </div>
               <div class="option">
                 <span>CATEGORY</span>
                 <i class="fas fa-angle-down"></i>
+                <div class="sub-options">
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Art</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Party</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Dance</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Trance</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="option">
+                <span>FEATURE</span>
+                <i class="fas fa-angle-down"></i>
+                <div class="sub-options">
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Free</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>DJ</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>18 and above</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>All night</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Loud</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Obnoxious</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="option">
+                <span>DATE</span>
+                <i class="fas fa-angle-down"></i>
+                <div class="sub-options">
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Today</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Tomorrow</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>Next day</span>
+                    </label>
+                  </div>
+                  <div class="sub-option">
+                    <label>
+                      <input type="checkbox">
+                      <span>10/12/2018</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
@@ -69,11 +205,303 @@
             <input type="text" placeholder="Search restaurants...">
             <button class="btn kbtn"><i class="fas fa-search"></i></button>
           </div>
+          <div class="options">
+            <div class="option">
+              <span>AREA</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Thamel</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Chettrapati</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Lazimpat</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>New Road</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Baneshwor</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Basantapur</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>CATEGORY</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Art</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Party</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Dance</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Trance</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>FEATURE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Free</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>DJ</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>18 and above</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>All night</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Loud</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Obnoxious</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>DATE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Today</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Tomorrow</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Next day</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>10/12/2018</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="cafes" role="tabpanel" aria-labelledby="cafes-tab">
           <div class="_input_wrap">
             <input type="text" placeholder="Search cafes...">
             <button class="btn kbtn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="options">
+            <div class="option">
+              <span>AREA</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Thamel</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Chettrapati</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Lazimpat</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>New Road</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Baneshwor</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Basantapur</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>CATEGORY</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Art</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Party</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Dance</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Trance</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>FEATURE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Free</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>DJ</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>18 and above</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>All night</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Loud</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Obnoxious</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>DATE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Today</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Tomorrow</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Next day</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>10/12/2018</span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane" id="bars" role="tabpanel" aria-labelledby="bars-tab">
@@ -81,16 +509,315 @@
             <input type="text" placeholder="Search bars...">
             <button class="btn kbtn"><i class="fas fa-search"></i></button>
           </div>
+          <div class="options">
+            <div class="option">
+              <span>AREA</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Thamel</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Chettrapati</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Lazimpat</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>New Road</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Baneshwor</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Basantapur</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>CATEGORY</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Art</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Party</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Dance</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Trance</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>FEATURE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Free</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>DJ</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>18 and above</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>All night</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Loud</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Obnoxious</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>DATE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Today</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Tomorrow</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Next day</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>10/12/2018</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="shops" role="tabpanel" aria-labelledby="shops-tab">
           <div class="_input_wrap">
-            <input type="text" placeholder="Search shop...">
+            <input type="text" placeholder="Search shops...">
             <button class="btn kbtn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="options">
+            <div class="option">
+              <span>AREA</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Thamel</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Chettrapati</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Lazimpat</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>New Road</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Baneshwor</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Basantapur</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>CATEGORY</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Art</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Party</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Dance</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Trance</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>FEATURE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Free</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>DJ</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>18 and above</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>All night</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Loud</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Obnoxious</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <span>DATE</span>
+              <i class="fas fa-angle-down"></i>
+              <div class="sub-options">
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Today</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Tomorrow</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>Next day</span>
+                  </label>
+                </div>
+                <div class="sub-option">
+                  <label>
+                    <input type="checkbox">
+                    <span>10/12/2018</span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $('.sub-options').mCustomScrollbar({
+      theme: 'minimal'
+    });    
+  });
+</script>
 
 <?php include 'footer.php'; ?>
