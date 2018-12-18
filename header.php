@@ -73,7 +73,7 @@
               <div class="menus">
                 <ul class="primary list-inline">
                   <li class="list-inline-item"><a href="#">EVENTS</a></li>
-                  <li class="list-inline-item"><a href="#">BARS</a></li>
+                  <li class="list-inline-item"><a href="bars.php">BARS</a></li>
                   <li class="list-inline-item"><a href="#">ARTISTS</a></li>
                   <li class="list-inline-item"><a href="#">EVENTS</a></li>
                   <li class="list-inline-item"><a href="#">BLOG</a></li>

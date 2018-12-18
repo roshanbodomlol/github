@@ -1,0 +1,18 @@
+@import 'partials/vars';
+
+div {
+  color: darken($primaryColor, $amount: 15);
+}
+
+.sidebar {
+  background: #000;
+  h6 {
+    color: #fff;
+  }
+  .filter-group {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
