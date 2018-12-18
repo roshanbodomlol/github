@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,WAAW,ECHF,OAAO,EAAE,UAAU;CDI7B",
+    "sources": [
+        "sass/global.scss",
+        "sass/partials/_vars.scss"
+    ],
+    "names": [],
+    "file": "global.css"
+}

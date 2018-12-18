@@ -1,0 +1,324 @@
+@import 'partials/vars';
+
+body {
+  font-family: $fontMain;
+  font-size: 14px;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.kbtn {
+  border-radius: 3px;
+  padding: 9px 18px;
+  transition: all .2s ease;
+  &.empty {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    &:hover {
+      color: #000;
+      background: #fff;
+      transition: all .2s ease;
+    }
+  }
+}
+
+.row {
+  &.centered {
+    align-items: center;
+  }
+}
+
+p {
+  b,a {
+    color: $primaryColor
+  }
+}
+
+ul {
+  &.bordered {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 1px;
+        height: 100%;
+        left: -8px;
+        top: -1px;
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#header-wrapper {
+  background: #000;
+  color: $primaryColor;
+  a {
+    color: $primaryColor;
+    font-size: 12px;
+    transition: all .2s ease;
+    &:hover {
+      color: lighten($primaryColor, $amount: 15);
+      border-color: lighten($primaryColor, $amount: 15);
+      transition: all .2s ease;
+    }
+  }
+  ._top {
+    padding: 12px 0;
+    .social {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          padding: 0;
+          a {
+            display: block;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            border: 2px solid $primaryColor;
+            padding: 5px 0;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    ._menu {
+      li {
+        margin: 0 6px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  ._bottom {
+    padding: 12px 0;
+  }
+  #menu-main {
+    background: #fff;
+    padding: 16px 0 12px 0;
+    border-bottom: 1px solid #000;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          color: #000;
+          transition: all .2s ease;
+          &:hover {
+            color: $primaryColor;
+            transition: all .2s ease;
+          }
+        }
+      }
+      li:not(:last-child) {
+        margin-right: 12px;
+      }
+      &.primary {
+        li:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+      &.secondary {
+        li {
+          &:before {
+            height: 24px;
+            left: -9px;
+            top: -3px;
+          }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i {
+              font-size: 18px;
+              margin-right: 9px;
+              color: $primaryColor;
+              transition: all .2s ease;
+            }
+            span {
+              line-height: 1;
+              padding-top: 2px;
+            }
+            &:hover {
+              color: #000;
+              i {
+                color: #000;                
+                transition: all .2s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+    .menus {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.kad {
+  background: #bbb;
+  margin: 18px 0;
+}
+
+#mast-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  position: relative;
+  .background-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    ._slide {
+      background-size: cover !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      padding: 30px 0;
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        background: rgba(0, 0, 0, .8);
+      }
+      ._title {
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+      }
+      ._tags {
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        span {
+          margin-bottom: 9px;
+        }
+      }
+    }
+  }
+  .search-tab {
+    position: relative;
+    z-index: 10;
+    .nav-tabs {
+      border: none;
+      display: flex;
+      li {
+        flex-grow: 1;
+        text-align: center;
+        margin: 0;
+        .nav-link {
+          overflow: hidden;
+          position: relative;
+          border-radius: 0;
+          color: #fff;
+          background: #000;
+          font-size: 12px;
+          transition: all .2s ease;
+          border: none;
+          padding: 18px 15px 15px 15px;
+          &:hover {
+            border: none;
+          }
+          &.active {
+            background: $primaryColor;
+            transition: all .2s ease;
+            &:after {
+              bottom: -9px;
+              transition: all .2s ease .2s;
+            }
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            transform: (rotateZ(45deg));
+            bottom: -18px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            transition: all .2s ease;
+          }  
+        }
+      }
+    }
+    .tab-content {
+      width: 800px;
+      .tab-pane {
+        ._input_wrap {
+          position: relative;
+          input {
+            width: 100%;
+            padding: 18px 69px 18px 30px;
+            border: none;
+          }
+          button {
+            position: absolute;
+            right: 9px;
+            top: 8px;
+            background: $primaryColor;
+          }
+        }
+        .options {
+          background: lighten($primaryColor, $amount: 15);
+          border-top: 1px solid darken($primaryColor, $amount: 15);
+          display: flex;
+          padding: 0 15px;
+          .option {
+            font-size: 12px;
+            line-height: 1;
+            padding: 15px;
+            cursor: pointer;
+            i {
+              transition: all .2s ease;
+              font-size: 14px;
+              margin-left: 6px;
+            }
+            &.active {
+              i {
+                transform: rotateZ(180deg);
+                transition: all .2s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
