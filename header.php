@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/themify/themify-icons.css">
 
+  <link rel="stylesheet" href="css/global2.min.css">
   <link rel="stylesheet" href="css/global.min.css">
 
   <script src="js/jquery-3.3.1.min.js"></script>
