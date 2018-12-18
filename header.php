@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/malihu/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="vendors/themify/themify-icons.css">
+  <link rel="stylesheet" href="vendors/slick/slick.css">
+  <link rel="stylesheet" href="vendors/slick/slick-theme.css">
 
   <link rel="stylesheet" href="css/global2.min.css">
   <link rel="stylesheet" href="css/global.min.css">
