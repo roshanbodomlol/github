@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,GAAG,AAAC,CACF,KAAK,CAAE,OAAkC,CAC1C,AAED,AAAA,QAAQ,AAAC,CACP,UAAU,CAAE,IAAI,CAUjB,AAXD,AAEE,QAFM,CAEN,EAAE,AAAC,CACD,KAAK,CAAE,IAAI,CACZ,AAJH,AAMI,QANI,CAKN,aAAa,CACX,EAAE,AAAC,CACD,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,CAAC,CACX",
+    "mappings": "",
     "sources": [
-        "sass/global2.scss",
-        "sass/partials/_vars.scss"
+        "sass/global2.scss"
     ],
     "names": [],
     "file": "global2.min.css"
