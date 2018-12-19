@@ -1,55 +1,68 @@
 @import 'partials/vars';
 
-// ERMAGERD!!!
-// div {
-//   color: darken($primaryColor, $amount: 15);
-// }
-
-.sidebar {
-  .dark-sidebar {
-    .sub_option {
-      position: relative;
-      label {
-        font-size: 14px;
-        width: 100%;
-        margin: 0;
-        cursor: pointer;
-        span {
-          &:before {
-            content: "";
-            display: inline-block;
-            border-radius: 50%;
-            border: 1px solid $primaryColor;
-            width: 15px;
-            height: 15px;
-            position: absolute;
-            right: 15px;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            width: 9px;
-            height: 9px;
-            background: $primaryColor;
-            border-radius: 50%;
-            position: absolute;
-            right: 18px;
-            top: 30px;
-            opacity: 0;
-            transition: all .2s ease;
+.listing-page {
+  .listing-wrapper {
+    .listing-menu {
+      border-bottom: 1px solid #000;
+      padding-bottom: 6px;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      .filter-list {
+        ul {
+          .list-inline-item {
+            a {
+              color: #000;
+              &:hover {
+                color: $primaryColor;
+              }
+            }
           }
         }
-        input {
-          float: right;
-          position: absolute;
-          opacity: 0;
-          pointer-events: none;
-          &:checked {
-            &+span {
-              &:after {
-                opacity: 1;
-                transition: all .2s ease;
-              }
+      }
+    }
+  }
+  .listings {
+    .listing-item {
+      background: #fff;
+      margin-bottom: 15px;
+      .listing-item-image {
+        img {
+          // width: 325px;
+        }
+      }
+      .listing-item-content {
+        margin-top: 30px;
+        h4 {
+          text-transform: uppercase;
+          font-weight: 600; 
+          font-size: 1rem;
+        }
+        .address {
+          margin-bottom: 0;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .sidebar {
+    .dark-sidebar {
+      // background: #000;
+      color: $primaryColor;
+      text-transform: uppercase;
+      h6 {
+        padding-top: 15px;
+        text-transform: uppercase;
+      }
+      .k-input {
+        .inner-k-input {
+          position: relative;
+          label {
+            padding: 3px 0;
+            span:after {
+              top: 6px;
             }
           }
         }
