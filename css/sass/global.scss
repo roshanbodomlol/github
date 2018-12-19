@@ -6,6 +6,19 @@ body {
   font-weight: 600;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1280px;
+  max-width: 100%;
+}
+
 ::selection {
   background: $primaryColor;
 }
@@ -725,6 +738,7 @@ ul {
 .k-section {
   margin: 120px;
   .section-title {
+    padding-bottom: 12px;
     h1,h2,h3,h4,h5 {
       margin: 0;
     }
@@ -732,6 +746,10 @@ ul {
 }
 
 .k-list {
+  margin-bottom: 15px;
+  a {
+    color: #000;
+  }
   &._basic {
     ._dets {
       font-size: 11px;
@@ -739,7 +757,52 @@ ul {
       padding: 18px 0;
       display: flex;
       justify-content: space-between;
+      ._title {
+        padding: 3px 9px 0 0;
+      }
+      ._icon {
+        i {
+          font-size: 18px;
+          border: 2px solid #000;
+          border-radius: 50%;
+          padding: 9px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+        }
+      }
     }
+  }
+  &:hover {
+    ._icon {
+      i {
+        transform: rotateZ(-18deg);
+      }
+      .fa-glass-martini-alt {
+        &:before {
+          content: "\f000";
+        }
+      }
+    }
+  }
+}
+
+.loadMore {
+  margin: auto;
+  cursor: pointer;
+  font-size: 18px;
+  height: 22px;
+  &.rotating {
+    animation: rotating 3s infinite;
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
 

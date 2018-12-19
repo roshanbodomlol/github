@@ -1076,17 +1076,44 @@
       <div class="row">
         <div class="col">
           <div class="section-title">
-            <h1>FOOD & DRINK NEWS</h1>
+            <h4>FOOD & DRINK NEWS</h4>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row" id="foodscontainer">
         <?php include "templates/list/1.php"; ?>
+      </div>
+      <div class="row">
+        <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#foodscontainer">
+          <i class="fas fa-plus-circle"></i>
+        </div>
       </div>
     </div>
   </section>
+
+  <section id="art-news" class="k-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title">
+              <h4>ARTS & ENTERTAINMENT NEWS</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="artscontainer">
+          <?php include "templates/list/2.php"; ?>
+        </div>
+        <div class="row">
+          <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#artscontainer">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
 </div>
 <script>
