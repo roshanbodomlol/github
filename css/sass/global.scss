@@ -208,6 +208,7 @@ ul {
   justify-content: center;
   height: 550px;
   position: relative;
+  overflow: hidden;
   .background-slider {
     position: absolute;
     width: 100%;
@@ -428,19 +429,35 @@ ul {
     background: #000;
     float: left;
     padding: 9px 15px;
-    h2 {
+    h3 {
       color: #fff;
       margin: 0;
+      padding: 12px 24px 6px 24px;
     }
   }
   ._main {
     display: flex;
-    ._slider {
+    .reviews-slider-wrap  {
       flex: 2;
+      position: relative;
+      min-width: 0;
+      ._slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+      }
+      .reviews-slider, .slick-list, .slick-track {
+        height: 100%;
+      }
     }
     ._tabs {
       flex: 1;
       min-width: 240px;
+      .tab-content {
+        min-height: 484px;
+      }
     }
   }
 }
@@ -464,7 +481,7 @@ ul {
   }
 }
 
-#restaurants-review {
+.tab-content {
   ._review {
     padding: 21px;
     display: flex;
@@ -472,6 +489,10 @@ ul {
     align-items: center;
     position: relative;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+    height: 88px;
+    a {
+      color: #000;
+    }
     cursor: pointer;
     ._review_title {
       font-weight: 600;
@@ -482,6 +503,7 @@ ul {
       position: absolute;
       height: 100%;
       right: 0;
+      transition: all .3s ease .2s;
       ._pin {
         position: absolute;
         left: -69px;
@@ -501,6 +523,7 @@ ul {
           margin: auto;
           text-align: center;
           opacity: 0;
+          transition: all .2s ease;
         }
       }
       ._address {
@@ -514,6 +537,7 @@ ul {
         justify-content: space-between;
         span {
           opacity: 0;
+          transition: all .2s ease;
         }
       }
     }
@@ -698,7 +722,26 @@ ul {
   }
 }
 
+.k-section {
+  margin: 120px;
+  .section-title {
+    h1,h2,h3,h4,h5 {
+      margin: 0;
+    }
+  }
+}
 
+.k-list {
+  &._basic {
+    ._dets {
+      font-size: 11px;
+      line-height: 1;
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 
 
 
