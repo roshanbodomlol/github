@@ -874,91 +874,194 @@
       <div class="row">
         <div class="col">
           <div class="_title">
-            <h2>LATEST REVIEWS</h2>
+            <h3>LATEST REVIEWS</h2>
           </div>    
         </div>
       </div>
       <div class="row">
         <div class="col-md-9">
           <div class="_main">
-            <div class="_slider"></div>
+            <div class="reviews-slider-wrap">
+              <div class="reviews-slider">
+                <div class="_slide" style="background: url('img/restaurants-review.jpg')"></div>
+                <div class="_slide" style="background: url('img/bars-review.jpeg')"></div>
+              </div>
+            </div>
             <div class="_tabs">
               <ul class="nav nav-tabs" id="reviewsTab" role="tablist">
                 <li class="nav-item">
-                  <a data-slideindex="0" class="nav-link active" id="restaurants-review-tab" data-toggle="tab" href="#events-review" role="tab" aria-controls="events" aria-selected="true">RESTAURANTS</a>
+                  <a data-slideindex="0" data-slideindex="0" class="nav-link active" id="restaurants-review-tab" data-toggle="tab" href="#restaurants-review" role="tab" aria-controls="events" aria-selected="true">RESTAURANTS</a>
                 </li>
                 <li class="nav-item">
-                  <a data-slideindex="1" class="nav-link" id="bars-review-tab" data-toggle="tab" href="#restaurants-review" role="tab" aria-controls="restaurants" aria-selected="false">BARS</a>
+                  <a data-slideindex="1" data-slideindex="0" class="nav-link" id="bars-review-tab" data-toggle="tab" href="#bars-review" role="tab" aria-controls="restaurants" aria-selected="false">BARS</a>
                 </li>
               </ul>
               <div class="tab-content">
-                  <div class="tab-pane active" id="restaurants-review" role="tabpanel" aria-labelledby="restaurants-review-tab">
-                    <div class="_review">
-                      <div>
-                        <div class="_review_title">RON'S UPSTAIRS</div>
-                        <div class="stars star-3"></div>
-                      </div>
-                      <div class="_location_overlay">
-                        <div class="_pin">
-                          <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="_address">
-                          <span>Shanti Marga, Sanepa 21, Lalitpur</span>
-                          <span><b>(T) </b>01-444-4432</span>
-                        </div>
-                      </div>
+                <div class="tab-pane active" id="restaurants-review" role="tabpanel" aria-labelledby="restaurants-review-tab">
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">RON'S UPSTAIRS</div>
+                      <div class="stars star-3"></div>
                     </div>
-                    <div class="_review">
-                      <div>
-                        <div class="_review_title">25 HOURS</div>
-                        <div class="stars star-4-2"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
                       </div>
-                      <div class="__pick"></div>
-                      <div class="_location_overlay">
-                        <div class="_pin">
-                          <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="_address">
-                          <span>Shanti Marga, Sanepa 21, Lalitpur</span>
-                          <span><b>(T) </b>01-444-4432</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="_review">
-                      <div>
-                        <div class="_review_title">SAL'S PIZZA</div>
-                        <div class="stars star-5"></div>
-                      </div>
-                      <div class="__pick"></div>
-                      <div class="_location_overlay">
-                        <div class="_pin">
-                          <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="_address">
-                          <span>Shanti Marga, Sanepa 21, Lalitpur</span>
-                          <span><b>(T) </b>01-444-4432</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="_review">
-                      <div>
-                        <div class="_review_title">MAMA'S HOT CURRY</div>
-                        <div class="stars star-1-2"></div>
-                      </div>
-                      <div class="_location_overlay">
-                        <div class="_pin">
-                          <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="_address">
-                          <span>Shanti Marga, Sanepa 21, Lalitpur</span>
-                          <span><b>(T) </b>01-444-4432</span>
-                        </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane active" id="bars-review" role="tabpanel" aria-labelledby="bars-review-tab">
-
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">25 HOURS</div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                    <div class="__pick"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
                   </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">SAL'S PIZZA</div>
+                      <div class="stars star-5"></div>
+                    </div>
+                    <div class="__pick"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">MAMA'S HOT CURRY</div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                    <div class="__pick"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">MAMA'S COLD CURRY</div>
+                      <div class="stars star-0-2"></div>
+                    </div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <a href="#">View All Restaurants <i class="fas fa-angle-right"></i></a>
+                  </div>
+                </div>
+                <div class="tab-pane" id="bars-review" role="tabpanel" aria-labelledby="bars-review-tab">
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">RON'S UPSTAIRS</div>
+                      <div class="stars star-5"></div>
+                    </div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">25 HOURS</div>
+                      <div class="stars star-3"></div>
+                    </div>
+                    <div class="__pick"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">SAL'S PIZZA</div>
+                      <div class="stars star-0"></div>
+                    </div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">MAMA'S HOT CURRY</div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <div>
+                      <div class="_review_title">MAMA'S COLD CURRY</div>
+                      <div class="stars star-2-2"></div>
+                    </div>
+                    <div class="__pick"></div>
+                    <div class="_location_overlay">
+                      <div class="_pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="_address">
+                        <span>Shanti Marga, Sanepa 21, Lalitpur</span>
+                        <span><b>(T) </b>01-444-4432</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_review">
+                    <a href="#">View All Bars <i class="fas fa-angle-right"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -967,13 +1070,58 @@
       </div>
     </div>
   </div>
+
+  <section id="food-news" class="k-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section-title">
+            <h4>FOOD & DRINK NEWS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="foodscontainer">
+        <?php include "templates/list/1.php"; ?>
+      </div>
+      <div class="row">
+        <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#foodscontainer">
+          <i class="fas fa-plus-circle"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="art-news" class="k-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title">
+              <h4>ARTS & ENTERTAINMENT NEWS</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="artscontainer">
+          <?php include "templates/list/2.php"; ?>
+        </div>
+        <div class="row">
+          <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#artscontainer">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
 </div>
 <script>
   $(document).ready(function() {
     $('.sub-options').mCustomScrollbar({
       theme: 'minimal'
     });
-    $('.background-slider').slick({
+    $('.background-slider, .reviews-slider').slick({
       arrows: false,
       dots: false,
       autoplay: false,
@@ -983,6 +1131,9 @@
     });
     $('.search-tab .nav-link').click(function() {
       $('.background-slider').slick('slickGoTo', $(this).data('slideindex'));
+    });
+    $('#reviewsTab .nav-link').click(function() {
+      $('.reviews-slider').slick('slickGoTo', $(this).data('slideindex'));
     });
   });
 </script>
