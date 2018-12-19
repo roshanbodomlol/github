@@ -1,26 +1,33 @@
 <?php include 'header.php'; ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar">
-              <h6>Filters</h6>
-              <div class="filter-options">
-                <input type="radio">Cp Pick
-                <input type="radio">Open Now
-              </div>
-              <div class="filter-group">
-                <ul>
-                  <li>Area</li>
-                  <li>Styles</li>
-                  <li>Features</li>
-                  <li>Price</li>
-                  <li>Rating</li>
-                </ul>
-              </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="sidebar">
+        <div class="dark-sidebar">
+          <h6>Filters</h6>
+          <div class="sub_option">
+            <label>
+              <input type="checkbox">
+              <span>Cp Pick (11)</span>
+            </label>
+          </div>
+          <div class="sub_option">
+            <label>
+              <input type="checkbox">
+              <span>Open Now (11)</span>
+              </label>
+          </div>
+          <div class="sub_option">
+            <label>
+              <input type="checkbox">
+              <span>Open Now (11)</span>
+              </label>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </div>
 
 <?php include 'footer.php'; ?>
