@@ -1,6 +1,7 @@
 @import 'partials/vars';
 
 .listing-page {
+  background: #f5f2ed;
   .listing-wrapper {
     .listing-menu {
       border-bottom: 1px solid #000;
@@ -61,10 +62,59 @@
           position: relative;
           label {
             padding: 3px 0;
+            span:before {
+              right: 0;
+            }
             span:after {
               top: 6px;
+              right: 3px;
             }
           }
+        }
+      }
+    }
+    .extra-filters {
+      padding-top: 6px;
+      .single-filter {
+        padding: 3px 0;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px solid #000;
+        .filter-title {
+          i {
+            right: 0;
+            position: absolute;
+            top: 3px;
+          }
+          &.hide {
+            i {
+              &:before {
+                content: "\f077";
+              }
+            }
+          }
+        }
+        .k-input {
+          .inner-k-input {
+            position: relative;
+            label {
+              padding: 3px 0;
+              span {
+                font-weight: 400;
+              }
+              span:before {
+                right: 0;
+              }
+              span:after {
+                top: 6px;
+                right: 3px;
+              }
+            }
+          }
+        }
+        .hideFilter {
+          display: none;
+          // transition: all .2s ease;
         }
       }
     }
