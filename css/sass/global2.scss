@@ -1,12 +1,12 @@
 @import 'partials/vars';
 
 .listing-page {
+  position: relative;
   background: #f5f2ed;
   .listing-wrapper {
     .listing-menu {
       border-bottom: 1px solid #000;
-      padding-bottom: 6px;
-      padding-top: 15px;
+      padding: 12px 0;
       display: flex;
       justify-content: space-between;
       .filter-list {
@@ -27,9 +27,34 @@
     .listing-item {
       background: #fff;
       margin-bottom: 15px;
+      cursor: pointer;
+      &:hover {
+        .col-md-1 {
+          i {
+              transform: rotateZ(-18deg);
+              &:before {
+                content: "\f000";
+              }
+          }
+        }
+      }
       .listing-item-image {
         img {
           // width: 325px;
+        }
+      }
+      .col-md-1 {
+        text-align: center;
+        i {
+          margin-top: 30px;
+          font-size: 18px;
+          border: 2px solid #000;
+          border-radius: 50%;
+          padding: 9px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          cursor: pointer;
         }
       }
       .listing-item-content {
@@ -48,60 +73,26 @@
       }
     }
   }
-  .sidebar {
-    .dark-sidebar {
-      // background: #000;
-      color: $primaryColor;
-      text-transform: uppercase;
-      h6 {
-        padding-top: 15px;
+  .col-md-3 {
+    padding: 0;
+    background: $primaryColor;
+    .sidebar {
+      .dark-sidebar {
+        background: #000;
+        color: $primaryColor;
         text-transform: uppercase;
-      }
-      .k-input {
-        .inner-k-input {
-          position: relative;
-          label {
-            padding: 3px 0;
-            span:before {
-              right: 0;
-            }
-            span:after {
-              top: 6px;
-              right: 3px;
-            }
-          }
-        }
-      }
-    }
-    .extra-filters {
-      padding-top: 6px;
-      .single-filter {
-        padding: 3px 0;
-        cursor: pointer;
-        position: relative;
-        border-bottom: 1px solid #000;
-        .filter-title {
-          i {
-            right: 0;
-            position: absolute;
-            top: 3px;
-          }
-          &.hide {
-            i {
-              &:before {
-                content: "\f077";
-              }
-            }
-          }
+        padding-left: 30px;
+        padding-right: 15px;
+        padding-bottom: 9px;
+        h6 {
+          padding-top: 15px;
+          text-transform: uppercase;
         }
         .k-input {
           .inner-k-input {
             position: relative;
             label {
               padding: 3px 0;
-              span {
-                font-weight: 400;
-              }
               span:before {
                 right: 0;
               }
@@ -112,11 +103,73 @@
             }
           }
         }
-        .hideFilter {
-          display: none;
-          // transition: all .2s ease;
+      }
+      .extra-filters {
+        padding-left: 30px;
+        padding-right: 15px;
+        padding-top: 6px;
+        padding-bottom: 15px;
+        .single-filter {
+          padding: 3px 0;
+          cursor: pointer;
+          position: relative;
+          border-bottom: 1px solid #000;
+          .filter-title {
+            i {
+              right: 0;
+              position: absolute;
+              top: 3px;
+            }
+            &.hide {
+              i {
+                &:before {
+                  content: "\f077";
+                }
+              }
+            }
+          }
+          .k-input {
+            .inner-k-input {
+              position: relative;
+              label {
+                padding: 3px 0;
+                span {
+                  font-weight: 400;
+                }
+                span:before {
+                  right: 0;
+                  border: 1px solid #000;
+                }
+                span:after {
+                  top: 6px;
+                  right: 3px;
+                  background: #000;
+                }
+              }
+            }
+          }
+          .hideFilter {
+            display: none;
+            // transition: all .2s ease;
+          }
         }
       }
     }
+  }
+  .black-block {
+    width: 35px;
+    height: 105px;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .yellow-block {
+    width: 35px;
+    height: 782px;
+    position: absolute;
+    background: $primaryColor;
+    right: 0;
+    top: 105px;
   }
 }

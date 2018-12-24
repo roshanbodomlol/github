@@ -26,15 +26,15 @@
               <div class="listings">
                   <div class="listing-item"> <!--item 1-->
                       <div class="row">
-                          <div class="col-md-5">
+                          <div class="col-md-4">
                             <div class="listing-item-image">
                                 <img src="img/restaurant.jpg" alt="">
                             </div>
                           </div>
-                          <!-- <div class="col-md-1">
-                              <i class="fas fa-wine-glass-alt"></i>
-                          </div> -->
-                          <div class="col-md-7">
+                          <div class="col-md-1">
+                            <i class="fas fa-glass-martini-alt"></i>
+                          </div>
+                          <div class="col-md-6">
                             <div class="listing-item-content">
                                 <h4>Busy Bee</h4>
                                 <div class="stars star-3"></div>
@@ -50,12 +50,15 @@
                   </div>
                   <div class="listing-item"> <!--item 2-->
                       <div class="row">
-                          <div class="col-md-5">
+                          <div class="col-md-4">
                             <div class="listing-item-image">
                                 <img src="img/casino.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-md-7">
+                          <div class="col-md-1">
+                            <i class="fas fa-glass-martini-alt"></i>
+                          </div>
+                          <div class="col-md-6">
                             <div class="listing-item-content">
                                 <h4>Purple Haze</h4>
                                 <div class="stars star-3-2"></div>
@@ -71,12 +74,15 @@
                   </div>
                   <div class="listing-item"><!--item 3-->
                       <div class="row">
-                          <div class="col-md-5">
+                          <div class="col-md-4">
                             <div class="listing-item-image">
                                 <img src="img/restaurant.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-md-7">
+                          <div class="col-md-1">
+                            <i class="fas fa-glass-martini-alt"></i>
+                          </div>
+                          <div class="col-md-6">
                             <div class="listing-item-content">
                                 <h4>Club 25 Hours</h4>
                                 <div class="stars star-4-2"></div>
@@ -92,12 +98,15 @@
                   </div>
                   <div class="listing-item"> <!--item 4-->
                       <div class="row">
-                          <div class="col-md-5">
+                          <div class="col-md-4">
                             <div class="listing-item-image">
                                 <img src="img/casino.jpg" alt="">
                             </div>
                           </div>
-                          <div class="col-md-7">
+                          <div class="col-md-1">
+                            <i class="fas fa-glass-martini-alt"></i>
+                          </div>
+                          <div class="col-md-6">
                             <div class="listing-item-content">
                                 <h4>Reggae Bar</h4>
                                 <div class="stars star-2-2"></div>
@@ -319,6 +328,8 @@
           </div>
         </div>
       </div>
+      <div class="black-block"></div>
+      <div class="yellow-block"></div>
 </div>
 
 <?php include 'footer.php'; ?>

@@ -3,7 +3,6 @@
 
     <!--Listing-->
       <div class="full">
-          <div class="container">
           <div class="listing-wrapper">
               <div class="listing-menu"> <!--flex-->
                 <div class="list">
@@ -40,7 +39,6 @@
                   </div>
                 </div>
               </div>
-            </div>
       </div>
 </div>
 
