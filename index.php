@@ -20,7 +20,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/js.cookie.js"></script>
   <script>
-    var siteURL = 'http://localhost:88/kgarira';
+    var siteURL = 'http://localhost:3030';
     var regionCookie = Cookies.get('kregion');
     if (regionCookie) window.location.href = siteURL + regionCookie;
   </script>
