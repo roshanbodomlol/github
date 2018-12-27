@@ -869,6 +869,55 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="kgarira-directory">
+          <div class="_left">
+            <h2>SEARCH OUR DIRECTORY</h2>
+          </div>
+          <div class="_right">
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-utensils"></i>
+                <span>Restaurants</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-coffee"></i>
+                <span>Cafes</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-glass-martini-alt"></i>
+                <span>Bars</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-beer"></i>
+                <span>Pubs</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Shops</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="_icon">
+                <i class="fas fa-calendar-check"></i>
+                <span>Events</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="front-page-reviews">
     <div class="container">
       <div class="row">
@@ -1066,7 +1115,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <div class="kad" style="height:100%;margin:0;"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -1086,7 +1137,7 @@
         <?php include "templates/list/1.php"; ?>
       </div>
       <div class="row">
-        <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#foodscontainer">
+        <div class="loadMore" data-load="http://localhost:3030/ajax/morefoods.json" data-container="#foodscontainer">
           <i class="fas fa-plus-circle"></i>
         </div>
       </div>
@@ -1108,13 +1159,123 @@
           <?php include "templates/list/2.php"; ?>
         </div>
         <div class="row">
-          <div class="loadMore" data-load="http://localhost:88/kgarira/ajax/morefoods.json" data-container="#artscontainer">
+          <div class="loadMore" data-load="http://localhost:3030/ajax/morefoods.json" data-container="#artscontainer">
             <i class="fas fa-plus-circle"></i>
           </div>
         </div>
       </div>
     </section>
-
+    <div id="explore">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>EXPLORE THE CITY</h3>
+            <ul class="icon-grid">
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-glass-martini-alt"></i>
+                    <span>Drink</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-utensils"></i>
+                    <span>Food</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-tv"></i>
+                    <span>Technology</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-palette"></i>
+                    <span>Art</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-music"></i>
+                    <span>Music</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-film"></i>
+                    <span>Film</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-glass-martini-alt"></i>
+                    <span>Drink</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-utensils"></i>
+                    <span>Food</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-tv"></i>
+                    <span>Technology</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-palette"></i>
+                    <span>Art</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-music"></i>
+                    <span>Music</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="_icon">
+                    <i class="fa fa-film"></i>
+                    <span>Film</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <?php include 'templates/featured-events.php'; ?>
+          </div>
+          <div class="col-sm-4">
+            <?php include 'templates/trending-ajax.php'; ?>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 <script>
   $(document).ready(function() {
