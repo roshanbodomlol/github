@@ -22,7 +22,9 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-    globalVariable = {}
+    globalVariable = {
+      siteUrl: 'localhost:3030'
+    }
   </script>
 </head>
 
