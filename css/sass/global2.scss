@@ -2,7 +2,7 @@
 
 .listing-page {
   position: relative;
-  background: #f5f2ed;
+  background: $lightGrey;
   .listing-wrapper {
     .listing-menu {
       border-bottom: 1px solid #000;
@@ -175,6 +175,28 @@
 }
 
 /*Veneu detail page css starts*/
+.info-piece {
+  label {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 25px;
+  }
+  span {
+    display: block;
+    color: #fff;
+    a {
+      color: $primaryColor;
+      transition: all .3s ease;
+      &:hover {
+        color: #fff;
+        transition: all .3s ease;
+      }
+    }
+  }
+}
+
 .slick-prev {
   left: 25px;
   z-index: 1000;
@@ -187,7 +209,7 @@
 .venue-content {
   .venue-head {
     text-align: center;
-    border-top: 9px solid #0ec00c;
+    border-top: 9px solid $primaryColor;
     padding-top: 32px;
     a {
       text-transform: uppercase;
@@ -206,63 +228,64 @@
   }
   .venue-body {
     // flex
-    .content-menu {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #f5f2ed;
-      border-top: 1px solid #f5f2ed;
-      padding: 9px 18px;
-      // 1
-      .author { 
+      /*.content-menu {
         display: flex;
-        justify-content: flex-start;
-        i {
-          font-size: 30px;
-          margin-right: 9px;
-        }
-        .info {
-          font-size: 12px;
-          a {
-            color: $primaryColor;
-          }
-        }
-      }
-      // 2
-      .social-widgets {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 12px;
-        .shares {
-          text-align: center;
-          margin-right: 30px;
-          span {
-            display: block;
-          }
-        }
-        .social-icons {
-          font-size: 18px;
-          margin-top: 9px;
-          margin-right: 30px;
-          border-left: 1px solid #f5f2ed;
-          border-right: 1px solid #f5f2ed;
-          padding: 0 30px;
+        justify-content: space-between;
+        border-bottom: 1px solid $lightGrey;
+        border-top: 1px solid $lightGrey;
+        padding: 9px 18px;
+        // 1
+        .author { 
+          display: flex;
+          justify-content: flex-start;
           i {
-            margin-right: 12px;
+            font-size: 30px;
+            margin-right: 9px;
           }
-          :last-child {
-            margin-right: 0;
+          .info {
+            font-size: 12px;
+            a {
+              color: $primaryColor;
+            }
           }
         }
-        .login {
-          font-size: 18px;
-          margin-top: 9px;
+        // 2
+        .social-widgets {
+          display: flex;
+          justify-content: flex-start;
+          font-size: 12px;
+          .shares {
+            text-align: center;
+            margin-right: 30px;
+            span {
+              display: block;
+            }
+          }
+          .social-icons {
+            font-size: 18px;
+            margin-top: 9px;
+            margin-right: 30px;
+            border-left: 1px solid $lightGrey;
+            border-right: 1px solid $lightGrey;
+            padding: 0 30px;
+            i {
+              margin-right: 12px;
+            }
+            :last-child {
+              margin-right: 0;
+            }
+          }
+          .login {
+            font-size: 18px;
+            margin-top: 9px;
+          }
         }
-      }
-    }
+      } */
     .main-content {
       .info-block {
         background: black;
         padding: 36px 0;
+        font-size: 12px;
         .stars {
           margin-bottom: 30px;
         }
@@ -307,7 +330,7 @@
           margin-top: 20px;
         }
       }
-      .info-block-2 {
+      .inner-info-block-2 {
         padding: 18px;
         .open-now {
           color: #fff;
@@ -325,7 +348,7 @@
             }
           }
         }
-        .hours {
+        .opening-hours {
           position: relative;
           color: #fff;
           cursor: pointer;
@@ -338,9 +361,280 @@
             top: 3px;
           }
         }
+        .hours {
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+        }
+        .info-piece {
+          span {
+            font-style: italic;
+          }
+        }
+      }
+      /*Col 5*/
+      .review {
+        .review-bar {
+          border-bottom: 1px solid $lightGrey;
+          padding-top: 20px;
+          ul {
+            li {
+              position: relative;
+              a {
+                color: $primaryColor;
+                padding: 0 15px;
+                transition: all .3s ease;
+                &:hover {
+                  color: #000;
+                  transition: all .3s ease;
+                }
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                background: $lightGrey;
+                width: 1px;
+                height: 100%;
+                left: -8px;
+                top: -1px;
+              }
+              &:first-child {
+                &:before {
+                  display: none;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+        .detail {
+          margin-top: 12px;
+          font-weight: normal;
+          .booking {
+            background: #000;
+            text-align: center;
+            border: 1px solid $primaryColor;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 6px 0 3px 0;
+            font-size: 12px;
+            margin-bottom: 12px;
+            a {
+              color: $primaryColor;
+              transition: all .3s ease;
+              &:hover {
+                color: #fff;
+                text-decoration: underline;
+                transition: all .3s ease;
+              }
+            }
+          }
+          span {
+            font-style: italic;
+          }
+        }
+      }
+      /* Col 4 */
+      .venue-specials {
+        // height: 50%;
+        background: #000;
+        color: #fff;
+        padding: 20px;
+        .specials-title {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            width: 250px;
+            text-transform: uppercase;
+            font-size: 22px;
+          }
+          a {
+            color: $primaryColor;
+            margin-top: 15px;
+          }
+        }
+        .image-change {
+          background: url('../img/pubs.png') no-repeat;
+          padding-bottom: 60%;
+          background-size: contain;
+        }
+        .image-change-2 {
+          background: url('../img/restaurants.png') no-repeat;
+          padding-bottom: 60%;
+          background-size: contain;
+        }
+        .special-items {
+          list-style: none;
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 12px;
+          margin-top: 12px;
+          li {
+            margin-bottom: 3px;
+            a {
+              color: #fff;
+              transition: all .3s ease;
+              &:hover {
+                color: $primaryColor;
+                transition: all .3s ease;
+              }
+              i {
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+      }
+      /* Newsletter*/
+      .newsletter {
+        background: $primaryColor;
+        padding: 30px 20px;
+        a {
+          color: #000;
+        }
       }
     }
   }
+}
+.content-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $lightGrey;
+  border-top: 1px solid $lightGrey;
+  padding: 9px 18px;
+  // 1
+  .author { 
+    display: flex;
+    justify-content: flex-start;
+    i {
+      font-size: 30px;
+      margin-right: 9px;
+    }
+    .info {
+      font-size: 12px;
+      a {
+        color: $primaryColor;
+      }
+    }
+  }
+  // 2
+  .social-widgets {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    .shares {
+      text-align: center;
+      margin-right: 30px;
+      span {
+        display: block;
+      }
+    }
+    .social-icons {
+      font-size: 18px;
+      margin-top: 9px;
+      margin-right: 30px;
+      border-left: 1px solid $lightGrey;
+      border-right: 1px solid $lightGrey;
+      padding: 0 30px;
+      i {
+        margin-right: 12px;
+      }
+      :last-child {
+        margin-right: 0;
+      }
+    }
+    .login {
+      font-size: 18px;
+      margin-top: 9px;
+    }
+  }
+}
+
+.review {
+  &.commenting-section {
+    .content-menu {
+      .author {
+        .hiddenComments {
+          cursor: pointer;
+          color: #000;
+          span {
+            border-bottom: 1px solid $lightGrey;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .comments-block {
+    display: none;
+    background: #000;
+    .comments {
+      padding: 35px 20px;
+      h5 {
+        color: $primaryColor;
+        font-style: italic;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 35px;
+      }
+      .comments-inner {
+        padding-top: 35px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bdbdbd;
+        display: flex;
+        justify-content: space-between;
+        .comment-count {
+          color: #fff;
+        }
+        .signin-comment {
+          color: $primaryColor;
+          a {
+            color: $primaryColor;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bordered {
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 45px;
+  .comment-form {
+    color: $primaryColor;
+    margin-top: 45px;
+    width: 50%;
+    .form-detail {
+      display: inline-block;
+      width: 100%;
+      label {
+        float: left;
+        width: 20%;
+      }
+      input {
+        float: left;
+        width: 80%;
+      }
+      textarea {
+        float: left;
+        width: 80%;
+      }
+    }
+    button {
+      float: right;
+      background: $primaryColor;
+      border: none;
+      padding: 3px 12px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
+.showComments {
+  display: block !important;
 }
 
 /*Veneu detail page css ends*/
