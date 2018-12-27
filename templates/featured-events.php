@@ -22,41 +22,95 @@
 
 <script>
   function slidePrev() {
+    /// define slide
+    var slides = $('.k-slider ._window ._img');
+
     // get slide width
-    var slideWidth = $('.k-slider ._window ._img').width();
+    var slideWidth = $('.k-slider ._window').width();
 
     // get next slider
-    var prevSlide = $('.k-slider ._window ._img.active').prev();
-    prevSlide.addClass('ready').css({
-      'background-position': slideWidth/2+'px center',
-      'left': 'auto',
-      'right': '100%'
+    var nextSlide = $('.k-slider ._window ._img.active').prev();
+
+    // if not next select last child
+    if (nextSlide.length === 0) {
+      nextSlide = $('.k-slider ._window ._img:last-child');
+    }
+
+    //  ready next slide
+    // pre-slide css
+    nextSlide.addClass('__nextSlide').css({
+      zIndex: 20,
+      left: '-100%',
+      backgroundPosition: '-600px 0'
     });
-    // return false;
-    prevSlide.animate({
-      right: 0,
-      backgroundPosition: '0 +=0%'
-    }, 500, 'easeOutSine', function() {
-      $('.k-slider ._window ._img').removeClass('active');
-      prevSlide.addClass('active').removeClass('ready');
+
+    anime({
+      targets: '.__nextSlide',
+      left: {
+        value: 0,
+        duration: 450
+      },
+      backgroundPosition: {
+        value: ['0px 0px'],
+        duration: 650
+      },
+      easing: 'easeOutQuint',
+      // duration: 600,
+      complete: function() {
+        slides.removeClass('active').css({'z-index': 10});
+        nextSlide.css({
+          'z-index': 15,
+          'left': 0
+        })
+        $(nextSlide).removeClass('__nextSlide').addClass('active');
+      }
     });
   }
   function slideNext() {
+
+    // define slide
+    var slides = $('.k-slider ._window ._img');
+
     // get slide width
-    var slideWidth = $('.k-slider ._window ._img').width();
+    var slideWidth = $('.k-slider ._window').width();
 
     // get next slider
     var nextSlide = $('.k-slider ._window ._img.active').next();
-    nextSlide.addClass('ready').css({
-      'background-position': '-'+slideWidth/2+'px center'
+
+    // if not next select last child
+    if (nextSlide.length === 0) {
+      nextSlide = $('.k-slider ._window ._img:first-child');
+    }
+
+    //  ready next slide
+    // pre-slide css
+    nextSlide.addClass('__nextSlide').css({
+      zIndex: 20,
+      left: '100%',
+      backgroundPosition: '600px 0'
     });
-    // return false;
-    nextSlide.animate({
-      left: 0,
-      backgroundPosition: '0 +=0%'
-    }, 500, 'easeOutSine', function() {
-      $('.k-slider ._window ._img').removeClass('active');
-      nextSlide.addClass('active').removeClass('ready');
+
+    anime({
+      targets: '.__nextSlide',
+      left: {
+        value: 0,
+        duration: 450
+      },
+      backgroundPosition: {
+        value: ['-120px 0px'],
+        duration: 650
+      },
+      easing: 'easeOutQuint',
+      // duration: 600,
+      complete: function() {
+        slides.removeClass('active').css({'z-index': 10});
+        nextSlide.css({
+          'z-index': 15,
+          'left': 0
+        })
+        $(nextSlide).removeClass('__nextSlide').addClass('active');
+      }
     });
+  
   }
 </script>
