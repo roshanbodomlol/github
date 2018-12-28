@@ -5,22 +5,61 @@
       <div class="_img" style="background: url(img/girl.jpg)"></div>
       <div class="_img" style="background: url(img/canyon.jpg)"></div>
     </div>
-    <div class="_buttons">
-      <button type="button" class="_prev" onclick="slidePrev()">
-        <div class="_icon">
-          <i class="fas fa-angle-left"></i>
+    <div class="_dets">
+      <div class="_description">
+        <div class="description-slider">
+          <div class="slide-description">
+            <h5>Slide Title</h5>
+            <p>Slide description</p>
+          </div>
+          <div class="slide-description">
+            <h5>Slide Number 2</h5>
+            <p>Qui ita affectus, beatum esse numquam probabis; Bonum integritas corporis: misera debilitas.</p>
+          </div>
+          <div class="slide-description">
+            <h5>Slide Number 3</h5>
+            <p>Sed quid minus probandum quam esse aliquem beatum nec satis beatum</p>
+          </div>
         </div>
-      </button>
-      <button class="_next" onclick="slideNext()">
-        <div class="_icon">
-          <i class="fas fa-angle-right"></i>
+        <div class="_buttons">
+          <button type="button" class="_prev" onclick="slidePrev()">
+            <div class="_icon">
+              <i class="fas fa-angle-left"></i>
+            </div>
+          </button>
+          <button class="_next" onclick="slideNext()">
+            <div class="_icon">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </button>
         </div>
-      </button>
+      </div>
+      <div class="_next_slide">
+        <div class="_img_next" style="background: url(img/whale.jpg)"></div>
+        <div class="_img_next" style="background: url(img/girl.jpg)"></div>
+        <div class="_img_next" style="background: url(img/canyon.jpg)"></div>    
+      </div>
     </div>
   </div>
 </div>
 
 <script>
+  // description slider
+  $(document).ready(function() {
+    $('.description-slider').slick({
+      autoplay: false,
+      arrows: false,
+      dots: false,
+      fade: true
+    });
+    $('._next_slide').slick({
+      autoplay: false,
+      arrows: false,
+      dots: false,
+      fade: true,
+      initialSlide: 1
+    });
+  });
   function slidePrev() {
     /// define slide
     var slides = $('.k-slider ._window ._img');
@@ -46,16 +85,10 @@
 
     anime({
       targets: '.__nextSlide',
-      left: {
-        value: 0,
-        duration: 450
-      },
-      backgroundPosition: {
-        value: ['0px 0px'],
-        duration: 650
-      },
+      left: 0,
+      backgroundPosition: ['0px 0px'],
       easing: 'easeOutQuint',
-      // duration: 600,
+      duration: 9000,
       complete: function() {
         slides.removeClass('active').css({'z-index': 10});
         nextSlide.css({
@@ -70,6 +103,9 @@
 
     // define slide
     var slides = $('.k-slider ._window ._img');
+
+    // mask details
+    $('._dets').addClass('transitioning');
 
     // get slide width
     var slideWidth = $('.k-slider ._window').width();
@@ -87,21 +123,15 @@
     nextSlide.addClass('__nextSlide').css({
       zIndex: 20,
       left: '100%',
-      backgroundPosition: '600px 0'
+      backgroundPosition: (-1 * slideWidth + 150) + 'px 0'
     });
 
     anime({
       targets: '.__nextSlide',
-      left: {
-        value: 0,
-        duration: 450
-      },
-      backgroundPosition: {
-        value: ['-120px 0px'],
-        duration: 650
-      },
+      left: 0,
+      backgroundPosition: ['0px 0px'],
       easing: 'easeOutQuint',
-      // duration: 600,
+      duration: 800,
       complete: function() {
         slides.removeClass('active').css({'z-index': 10});
         nextSlide.css({
@@ -109,6 +139,9 @@
           'left': 0
         })
         $(nextSlide).removeClass('__nextSlide').addClass('active');
+        $('.description-slider').slick('slickNext');
+        $('._next_slide').slick('slickNext');
+        $('._dets').removeClass('transitioning');
       }
     });
   

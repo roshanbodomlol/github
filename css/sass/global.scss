@@ -8,6 +8,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 img {
@@ -24,7 +25,7 @@ img {
 }
 
 :focus {
-	outline: none;
+	outline: none !important;
 }
 
 a {
@@ -988,18 +989,20 @@ ul {
  }
 
 .k-slider {
+	display: flex;
 	._window {
 		height: 420px;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+		flex: 3;
 		._img {
 			position: absolute;
 			z-index: 10;
 			width: 100%;
 			height: 100%;
 			background: #000;
-			// background-size: cover !important;
+			background-size: cover !important;
 			// background-position: center !important;
 			background-repeat: no-repeat !important;
 			top: 0;
@@ -1007,6 +1010,92 @@ ul {
 			&.active {
 				z-index: 15;
 				left: 0;
+			}
+		}
+	}
+	._dets {
+		flex: 1;
+    display: flex;
+    flex-direction: column;
+		background: #000;
+		min-width: 0;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			opacity: 0;
+			visibility: hidden;
+			transition: all .3s ease;
+		}
+		&.transitioning {
+			&:after {
+				opacity: 1;
+				visibility: visible;
+				transition: all .3s ease;
+			}
+		}
+		._description {
+			flex-grow: 1;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 12px;
+			.slide-description {
+				h5 {
+					color: #fff;
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					color: $colorGrey;
+					font-weight: 400;
+				}
+			}
+			._buttons {
+				button {
+					background: none;
+					border: none;
+					color: #fff;
+					display: inline-block;
+					line-height: 1;
+					height: 20px;
+					cursor: pointer;
+					._icon {
+						i {
+							color: #fff;
+							border-color: #fff;
+							width: 24px;
+							height: 24px;
+							display: block;
+							padding: 4px 2px 2px 2px;
+							font-size: 12px;
+							border-width: 2px;
+						}
+						&:hover {
+							i {
+								transform: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		._next_slide {
+			flex: 1;
+			position: relative;
+			.slick-list, .slick-track {
+				height: 100%;
+			}
+			._img_next {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-size: cover !important;
+				background-position: center !important;
 			}
 		}
 	}
