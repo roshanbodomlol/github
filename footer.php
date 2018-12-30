@@ -3,6 +3,32 @@
 <div id="footer-wrapper">
   <div class="container">
     <div class="row">
+      <div class="col">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-sm">
+              <ul class="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <div class="newsletter-sub">
+                <i class="fas fa-at"></i>
+                <span>Subscribe to our Newsletter</span>
+                <div class="form">
+                  <input type="text" placeholder="Email Address">
+                  <button type="submit"><i class="fas fa-angle-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
       <div class="col-sm">
         <div class="footer-block">
           <div class="_header">
@@ -88,6 +114,12 @@
 </div>
 <!-- WRAPPER -->
 </div>
+
+<script>
+  $('.newsletter-sub > span').click(function() {
+    $(this).css({ display: 'none' }).siblings('.form').css({ display: 'flex' });
+  });
+</script>
 
 <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendors/malihu/jquery.mCustomScrollbar.js"></script>
