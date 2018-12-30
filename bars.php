@@ -9,7 +9,7 @@
               <!--listing menu-->
               <div class="listing-menu">
                 <div class="list">
-                    <i class="fas fa-bars"></i>
+                   <i class="fas fa-bars"></i>
                   <span>List</span>
                 </div>
                 <div class="filter-list">

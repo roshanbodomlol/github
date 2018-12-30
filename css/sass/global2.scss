@@ -633,8 +633,74 @@
     }
   }
 }
+
 .showComments {
   display: block !important;
+}
+
+.review {
+  .map {
+    iframe {
+      width: 100%;
+    }
+  }
+  .nearby-places {
+    margin-top: 45px;
+    .nearby-head {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        font-size: 20px;
+        background: #000;
+        // padding: 20px 40px 12px;
+        padding-top: 18px;
+        padding-bottom: 9px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+      .right-item {
+        background: $colorGrey;
+        color: #000;
+        padding-top: 18px;
+        padding-bottom: 9px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    .nearby-listing {
+      padding: 21px;
+      border: 1px solid $colorGrey;
+      .row {
+        .col-md-4 {
+          margin-bottom: 45px;
+          .nearby__single {
+            h6 {
+              margin-top: 15px;
+              text-transform: uppercase;
+              color: #000;
+            }
+            span {
+              display: block;
+              font-weight: 400;
+              color: #000;
+            }
+            ._tel {
+              label {
+                color: #000;
+              }
+              span {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*Veneu detail page css ends*/

@@ -341,6 +341,122 @@
               </div>
             </div>
           </div>
+          <!-- MAP -->
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0060871405153!2d85.32915831458334!3d27.717098331671306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190d841ad86d%3A0x2dd5aeafe26d1473!2sClub+25+Hours!5e0!3m2!1sen!2snp!4v1545981781051" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!-- Nearby Places -->
+          <div class="nearby-places">
+            <div class="nearby-head">
+              <h4>Nearby Places</h4>
+              <div class="right-item">
+                  <i class="fas fa-bars"></i>
+                  <span>List</span>
+              </div>
+            </div>
+            <div class="nearby-listing">
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/pubs.png" alt="">
+                      <div class="overlay">
+                        <i class="fas fa-glass-martini-alt"></i>
+                      </div>
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/restaurants.png" alt="">
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/pubs.png" alt="">
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/restaurants.png" alt="">
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/pubs.png" alt="">
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a class="nearby__single" href="#">
+                    <div class="nearby-single-place">
+                      <img src="img/restaurants.png" alt="">
+                      <h6>The Fake Pub</h6>
+                      <span>123 fake street</span>
+                      <span>Kathmandu</span>
+                      <div class="_tel">
+                        <label>T</label>
+                        <span>(123)456788</span>
+                      </div>
+                      <div class="stars star-4-2"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
