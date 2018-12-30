@@ -1276,6 +1276,128 @@
         </div>
       </div>
     </div>
+    <section class="k-n-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Kathmandu Markets</h3>
+            <div id="region-shops" style="background: url(img/shops.jpg)">
+              <div class="float-right">
+                <div class="highlight-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Avondale Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        City Farmers' Market at Britomart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Clevedon Village Farmers' Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Coatesville Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Grey Lynn Farmers' Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Hobsonville Point Farmers' Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        La Cigale French Farmer's Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Matakana Farmers' Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Oratia Farmers' Market
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fas fa-angle-right"></i>
+                        Sandringham Farmers' Market
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="must-tries">
+              <h4>Must Try</h4>
+              <div class="try-box">
+                <div class="_img" style="background: url(img/musttry1.jpg)"></div>
+                <div class="_dets">
+                  <h5>SUMTHIN DUMPLIN</h5>
+                  <p>This new inner city dumpling joint serves both traditional and new school parcels of joy.</p>
+                  <div class="stars stars-white star-4"></div>
+                  <div class="_icon">
+                    <a href="#">
+                      <i class="fas fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="try-box">
+                <div class="_img" style="background: url(img/musttry2.jpg)"></div>
+                <div class="_dets">
+                  <h5>SUMTHIN DUMPLIN</h5>
+                  <p>This new inner city dumpling joint serves both traditional and new school parcels of joy.</p>
+                  <div class="stars stars-white star-2-2"></div>
+                  <div class="_icon">
+                    <a href="#">
+                      <i class="fas fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="try-box">
+                <div class="_img" style="background: url(img/musttry3.jpeg)"></div>
+                <div class="_dets">
+                  <h5>SUMTHIN DUMPLIN</h5>
+                  <p>This new inner city dumpling joint serves both traditional and new school parcels of joy.</p>
+                  <div class="stars stars-white star-4-2"></div>
+                  <div class="_icon">
+                    <a href="#">
+                      <i class="fas fa-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <?php include 'templates/events-calendar.php'; ?>
+          </div>
+        </div>
+      </div>
+    </section>
 </div>
 <script>
   $(document).ready(function() {

@@ -23,7 +23,8 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
     globalVariable = {
-      siteUrl: 'localhost:3030'
+      siteUrl: 'localhost:3030',
+      loadEventsCalendar: 'http://localhost:3030/ajax/morecalendarevents.json'
     }
   </script>
 </head>
