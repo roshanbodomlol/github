@@ -2,17 +2,25 @@
 
 <div class="container">
   <!-- Slider -->
-    <div class="slider">
-        <div class="slide">
-          <img src="img/rocks.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/whale.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="img/ducks.jpg" alt="">
-        </div>
+  <div id="detail_slider" class="k-slider">
+    <div class="_window">
+      <div class="_img active" style="background: url(img/whale.jpg)"></div>
+      <div class="_img" style="background: url(img/girl.jpg)"></div>
+      <div class="_img" style="background: url(img/canyon.jpg)"></div>
     </div>
+    <div class="_buttons">
+      <button type="button" class="_prev" onclick="slidePrev()">
+        <div class="_icon">
+          <i class="fas fa-angle-left"></i>
+        </div>
+      </button>
+      <button class="_next" onclick="slideNext()">
+        <div class="_icon">
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </button>
+    </div>
+  </div>
     <!-- Content -->
     <div class="venue-content">
       <div class="venue-head"> 
@@ -463,14 +471,89 @@
 </div>
 
 <script>
-  $(document).ready(function () {
-    $('.slider').slick({
-      arrows: true
-    });
   $('.hiddenComments').click(function () {
     $('.comments-block').toggleClass('showComments');
   });
-  });
-</script>
+    function slidePrev() {
+      // define slide
+      var slides = $('.k-slider ._window ._img');
+    
+      // get slide width
+      var slideWidth = $('.k-slider ._window').width();
+  
+      // get next slider
+      var nextSlide = $('.k-slider ._window ._img.active').prev();
+  
+      // if not next select last child
+      if (nextSlide.length === 0) {
+        nextSlide = $('.k-slider ._window ._img:last-child');
+      }
+  
+      //  ready next slide
+      // pre-slide css
+      nextSlide.addClass('__nextSlide').css({
+        zIndex: 20,
+        left: '-100%',
+        backgroundPosition: (slideWidth - 150) + 'px 0'
+      });
+  
+      anime({
+        targets: '.__nextSlide',
+        left: 0,
+        backgroundPosition: ['0px center'],
+        easing: 'easeOutQuint',
+        duration: 800,
+        complete: function() {
+          slides.removeClass('active').css({'z-index': 10});
+          nextSlide.css({
+            'z-index': 15,
+            'left': 0
+          })
+          $(nextSlide).removeClass('__nextSlide').addClass('active');
+        }
+      });
+    }
+    function slideNext() {
+  
+      // define slide
+      var slides = $('.k-slider ._window ._img');
+  
+      // get slide width
+      var slideWidth = $('.k-slider ._window').width();
+  
+      // get next slider
+      var nextSlide = $('.k-slider ._window ._img.active').next();
+  
+      // if not next select last child
+      if (nextSlide.length === 0) {
+        nextSlide = $('.k-slider ._window ._img:first-child');
+      }
+  
+      //  ready next slide
+      // pre-slide css
+      nextSlide.addClass('__nextSlide').css({
+        zIndex: 20,
+        left: '100%',
+        backgroundPosition: (-1 * slideWidth + 150) + 'px 0'
+      });
+  
+      anime({
+        targets: '.__nextSlide',
+        left: 0,
+        backgroundPosition: ['0px center'],
+        easing: 'easeOutQuint',
+        duration: 800,
+        complete: function() {
+          slides.removeClass('active').css({'z-index': 10});
+          nextSlide.css({
+            'z-index': 15,
+            'left': 0
+          })
+          $(nextSlide).removeClass('__nextSlide').addClass('active');
+        }
+      });
+    
+    }
+  </script>
 
 <?php include 'footer.php'; ?>

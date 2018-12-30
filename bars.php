@@ -8,10 +8,10 @@
             <div class="listing-wrapper">
               <!--listing menu-->
               <div class="listing-menu">
-                <div class="list">
-                   <i class="fas fa-bars"></i>
-                  <span>List</span>
-                </div>
+                <!-- <div class="list">
+                                          <i class="fas fa-bars"></i>
+                                          <span>List</span>
+                                        </div> -->
                 <div class="filter-list">
                   <ul class="list-inline bordered">
                     <li class="list-inline-item">Sort by:</li>
@@ -120,6 +120,21 @@
                           </div>
                         </div>
                   </div>
+                </div>
+                <div id="pagination">
+                  <a href="#"><i class="fas fa-angle-left"></i></a>
+                  <ul>
+                    <li>
+                      <a class="active" href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
           </div>
@@ -346,5 +361,9 @@
         $(this).parent().children('.visibleFilter').slideDown(300);
       }
     });
+    var winWidth = $(window).width();
+    var containerWidth = $('.container').width();
+    var filterHeight = $('.dark-sidebar').outerHeight();
+    $('.black-block').height(filterHeight).width((winWidth - containerWidth)/2);
   });
 </script>
