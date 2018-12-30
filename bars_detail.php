@@ -316,7 +316,7 @@
                 </div>
               </div>
               <!-- Comment Form -->
-              <div class="bordered">
+              <div class="bordered-abc">
                   <div class="comment-form">
                       <form action="#">
                         <div class="form-detail">
