@@ -101,7 +101,7 @@
         })
           .done(function(response) {
             $.each(response, function(i, e) {
-              var template = '<div class="_event"><a href="'+e.url+'"><div class="_event_dets"><div class="_title">'+e.title+'</div><p>'+e.excerpt+'</p><i class="_more fas fa-angle-right"></i></div><div class="_icon"><i class="fas fa-utensils"></i></div></a></div>';
+              var template = '<div class="_event" style="opacity: 0"><a href="'+e.url+'"><div class="_event_dets"><div class="_title">'+e.title+'</div><p>'+e.excerpt+'</p><i class="_more fas fa-angle-right"></i></div><div class="_icon"><i class="fas fa-utensils"></i></div></a></div>';
               $('._events').append(template);
             });
             $('._events').fadeIn(300);
