@@ -347,8 +347,6 @@
       <div class="yellow-block"></div>
 </div>
 
-<?php include 'footer.php'; ?>
-
 <script>
   $(document).ready(function() {
     $('.filter-title').click(function() {
@@ -367,3 +365,5 @@
     $('.black-block').height(filterHeight).width((winWidth - containerWidth)/2);
   });
 </script>
+
+<?php include 'footer.php'; ?>

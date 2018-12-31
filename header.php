@@ -42,6 +42,130 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <div id="playmaker">
+    <div id="playmaker-main">
+      <span class="_close"><i class="fas fa-times"></i></span>
+      <form action="">
+        <div class="_form">
+          <div class="inputs">
+            <div class="_input">
+              <i class="fas fa-calendar-alt"></i>
+              <div class="_selected" id="play_day">It's Monday</div>
+              <input class="play_input" type="hidden" value="monday">
+              <i class="fas fa-angle-down down"></i>
+              <div class="dropdown">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="_input">
+              <i class="far fa-clock"></i>
+              <div class="_selected" id="play_time">NOW</div>
+              <input class="play_input" type="hidden" value="now">
+              <i class="fas fa-angle-down down"></i>
+              <div class="dropdown">
+                <ul>
+                  <li class="selected">
+                    <span role="button" data-value="now">Now</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="morning">Morning</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="afternoon">Afternoon</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="evening">Evening</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="latenight">Late Night</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="afterhours">After Hours</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="any">Anytime</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="_input">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="_selected" id="play_location">Anywhere</div>
+              <input class="play_input" type="hidden" value="any">
+              <i class="fas fa-angle-down down"></i>
+              <div class="dropdown">
+                <ul>
+                  <li class="selected">
+                    <span role="button" data-value="any">Anywhere</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="basantapur">Basantapur</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="thamel">Thamel</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="durbarmarg">Durbar Marg</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="lazimpat">Lazimpat</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="_input">
+              <i class="fas fa-utensils"></i>
+              <div class="_selected" id="play_what">I want something to do</div>
+              <input class="play_input" type="hidden" value="do">
+              <i class="fas fa-angle-down down"></i>
+              <div class="dropdown">
+                <ul>
+                  <li class="selected">
+                    <span role="button" data-value="any">I want something to do</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="basantapur">I want drinks</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="thamel">I want dessert</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="durbarmarg">I want to go to an event</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="lazimpat">Surprise me</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="_input">
+              <i class="far fa-heart"></i>
+              <div class="_selected" id="play_other">Anything</div>
+              <input class="play_input" type="hidden" value="any">
+              <i class="fas fa-angle-down down"></i>
+              <div class="dropdown">
+                <ul>
+                  <li class="selected">
+                    <span role="button" data-value="any">Anything</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="view">Somewhere with a view</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="romantic">Somewhere romantic</span>
+                  </li>
+                  <li>
+                    <span role="button" data-value="free">That's free</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button role="button" type="submit" class="play_btn">LET'S PLAY <i class="fas fa-angle-right"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
   <div id="wrapper">
     <div id="header-wrapper">
       <div class="_top">
@@ -96,10 +220,61 @@
                 </ul>
                 <ul class="secondary list-inline bordered">
                   <li class="list-inline-item">
-                    <a href="#"><i class="fas fa-sliders-h"></i><span>PLAYMAKER</span></a>
+                    <a href="#" id="openPlayMaker"><i class="fas fa-sliders-h"></i><span>PLAYMAKER</span></a>
                   </li>
-                  <li class="list-inline-item">
+                  <li id="directory-menu" class="list-inline-item">
                     <a href="#"><i class="fas fa-sitemap"></i><span>DIRECTORY</span></a>
+                    <div class="directory-sub">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <div class="_inner">
+                              <div class="_left">
+                                <h2>SEARCH OUR DIRECTORY</h2>
+                              </div>
+                              <div class="_right">
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Restaurants</span>
+                                  </div>
+                                </a>
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-coffee"></i>
+                                    <span>Cafes</span>
+                                  </div>
+                                </a>
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-glass-martini-alt"></i>
+                                    <span>Bars</span>
+                                  </div>
+                                </a>
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-beer"></i>
+                                    <span>Pubs</span>
+                                  </div>
+                                </a>
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>Shops</span>
+                                  </div>
+                                </a>
+                                <a href="#">
+                                  <div class="_icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>Events</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li class="list-inline-item">
                     <a href="#"><i class="fas fa-calendar-week"></i><span>CALENDAR</span></a>
