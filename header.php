@@ -279,8 +279,111 @@
                   <li class="list-inline-item">
                     <a href="#"><i class="fas fa-calendar-week"></i><span>CALENDAR</span></a>
                   </li>
-                  <li class="list-inline-item">
+                  <li id="search-menu" class="list-inline-item">
                     <a href="#"><i class="fas fa-search"></i><span>SEARCH</span></a>
+                    <div class="search-sub">
+                      <div class="_left">
+                        <div class="_top">
+                          <h5>Search</h5>
+                          <input type="text" class="search-input">
+                        </div>
+                        <span class="adv-search">ADVANCED FILTER</span>
+                        <span class="adv-search-hide">HIDE ADVANCED FILTER</span>
+                      </div>
+                      <div class="_advanced">
+                        <div class="search-cat">
+                          <div class="cat-title">Filter by category</div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Food & Drink</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Arts & Entertainment</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Design & Style</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Travel & Leisure</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="search-cat">
+                          <div class="cat-title">Filter by Type</div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Places</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Events</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="checkbox">
+                              <span>Articles</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="search-cat">
+                          <div class="cat-title">Filter by dates</div>
+                          <div class="k-input">
+                            <label>
+                              <input type="radio" name="date">
+                              <span>All</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="radio" name="date">
+                              <span>Past Week</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="radio" name="date">
+                              <span>Past Month</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="radio" name="date">
+                              <span>Past Year</span>
+                            </label>
+                          </div>
+                          <div class="k-input">
+                            <label>
+                              <input type="radio" name="date">
+                              <span>Specific Date</span>
+                            </label>
+                          </div>
+                          <div class="specific-date">
+                            <input type="text" placeholder="DD">
+                            <span>:</span>
+                            <input type="text" placeholder="MM">
+                            <span>:</span>
+                            <input type="text" placeholder="YY">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_right">
+                        <button type="submit" class="rounded">GO</button>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
