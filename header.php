@@ -168,6 +168,99 @@
   </div>
   <div id="wrapper">
     <div id="header-wrapper">
+      <div id="login-wrap">
+        <div id="login">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div>
+                  <img src="img/kgarira.png" alt="">
+                </div>
+                <div class="login-text">
+                    Make Concrete Playground yours with My Playground. Save and share your favourite picks and make plans to go out with friends. Registration is fast and free.
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="row">
+                  <div class="col">
+                    <div class="fb-login">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Login With Facebook
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <i class="fas fa-times close_header_login"></i>
+                  </div>
+                </div>
+                <div class="OR text-center">
+                  <span>OR</span>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="login-form">
+                      <input type="text" placeholder="Email Address">
+                      <input type="password" placeholder="Password">
+                      <button type="submit" class="login-btn">GO</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator"></div>
+                <a class="register-link" href="#">REGISTER</a> |
+                <a href="#">FORGOT PASSWORD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="register">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 offset-3">
+                <div class="register-form">
+                  <div class="row">
+                    <div class="col">
+                      <i class="fas fa-times close_header_register"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="col-sm">
+                      <input type="text" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="col-sm">
+                      <input type="email" placeholder="Confirm Email Address">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <input type="password" placeholder="Password">
+                    </div>
+                    <div class="col-sm">
+                      <div style="position:relative">
+                        <input type="password" placeholder="Confirm Password">
+                        <button type="submit" class="register-btn">GO</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="checkbox"> I agree to the terms & conditions.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="_top">
         <div class="container">
           <div class="row centered">
@@ -184,7 +277,7 @@
                 <ul class="_menu bordered">
                   <li><a href="#">BOOK ARTIST</a></li>
                   <li><a href="#">BUY TICKETS</a></li>
-                  <li><a href="#">LOGIN</a></li>
+                  <li><a id="showlogin" href="#">LOGIN</a></li>
                 </ul>
               </div>
             </div>
@@ -276,8 +369,156 @@
                       </div>
                     </div>
                   </li>
-                  <li class="list-inline-item">
+                  <li id="calendar-menu" class="list-inline-item">
                     <a href="#"><i class="fas fa-calendar-week"></i><span>CALENDAR</span></a>
+                    <div class="calendar-sub">
+                      <div class="_left">
+                        <div data-index="0" class="_slide active" style="background: url(img/whale.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>The Event of The Year</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="1" class="_slide" style="background: url(img/mounts.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Blast from the Past</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="2" class="_slide" style="background: url(img/girl.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Hard Times</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="3" class="_slide" style="background: url(img/casino.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Birthday Bash</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="4" class="_slide" style="background: url(img/canyon.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Disco Disco</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="5" class="_slide" style="background: url(img/whale.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Diplo</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div data-index="6" class="_slide" style="background: url(img/rocks.jpg)">
+                          <div class="_info">
+                            <a href="#">
+                              <div>
+                                <h6>Dance Dance</h6>
+                                <p>The Royal Botanic Garden's killer new exhibition features 25,000 carnivorous plants.</p>
+                                <div class="_icon">
+                                  <i class="fas fa-angle-right"></i>
+                                </div>
+                              </div>
+                              <div class="_icon">
+                                <i class="fas fa-glass-martini-alt"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_right">
+                        <ul id="header-calendar">
+                          <li data-index="0" class="active">
+                            <span><a href="#">Wed 2</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="1">
+                            <span><a href="#">Thu 3</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="2">
+                            <span><a href="#">Fri 4</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="3">
+                            <span><a href="#">Sat 5</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="4">
+                            <span><a href="#">Sun 6</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="5">
+                            <span><a href="#">Mon 7</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                          <li data-index="6">
+                            <span><a href="#">Tue 8</a></span>
+                            <span class="_all">| <a href="#">View All</a></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                   <li id="search-menu" class="list-inline-item">
                     <a href="#"><i class="fas fa-search"></i><span>SEARCH</span></a>

@@ -177,7 +177,7 @@ ul {
 			margin: 0;
 			padding: 0;
 			li {
-				padding: 16px 0 12px 0;
+				padding: 16px 0 12px 15px;
 				line-height: 1;
 				a {
 					color: #000;
@@ -196,7 +196,7 @@ ul {
 				li {
 					&:before {
 						height: 100%;
-						left: -9px;
+						left: 0;
 						top: 0;
 					}
 					a {
@@ -1962,5 +1962,228 @@ ul {
 		opacity: 1;
 		visibility: visible;
 		transition: all .3s ease;
+	}
+}
+
+.calendar-sub {
+	position: absolute;
+	top: 100%;
+	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease;
+	._left {
+		flex: 1;
+		background: #fff;
+		position: relative;
+		._slide {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-size: cover !important;
+			background-position: center !important;
+			opacity: 0;
+			transition: all .3s ease;
+			&.active {
+				opacity: 1;
+				transition: all .3s ease;
+			}
+			._info {
+				background: #fff;
+				width: 300px;
+				position: absolute;
+				top: 20%;
+				right: 0;
+				padding: 12px;
+				i {
+					color: #000 !important;
+				}
+				.fa-angle-right {
+					width: 22px;
+					height: 22px;
+					padding: 0;
+				}
+			}
+		}
+	}
+	._right {
+		background: #000;
+	}
+}
+
+#calendar-menu:hover {
+	.calendar-sub {
+		opacity: 1;
+		visibility: visible;
+		transition: all .3s ease;
+	}
+}
+
+#header-calendar {
+	margin: 0;
+	padding: 9px 0 !important;
+	min-height: 410px;
+	li {
+		display: block;
+		margin: 0 !important;
+		padding: 21px 0 21px 15px !important;
+		._all {
+			display: none;
+		}
+		&:hover {
+			._all {
+				display: inline;
+			}
+		}
+		&:before {
+			display: none !important;
+		}
+		a {
+			color: #fff !important;
+			font-size: 14px;
+			display: inline !important;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#login-wrap {
+	max-height: 0;
+	overflow: hidden;
+	transition: all .3s ease;
+	&.active {
+		max-height: 350px;
+		transition: all .3s ease;
+	}
+}
+
+#register {
+	background: $colorHalfBlack;
+	padding: 45px 0;
+	input:not([type="checkbox"]) {
+		width: 100%;
+		background: $colorGrey;
+		color: #000;
+		height: 45px;
+		margin-bottom: 15px;
+		border: none;
+		padding: 9px;
+		&[type="password"] {
+			padding-right: 88px;
+		}
+	}
+	.register-btn {
+		position: absolute;
+    height: 45px;
+    bottom: 15px;
+    right: 0;
+    background: #fff;
+    border: none;
+		padding: 0 18px;
+		&:before {
+			content: "";
+			width: 15px;
+			height: 15px;
+			-webkit-transform: rotateZ(45deg);
+			transform: rotateZ(45deg);
+			background: #fff;
+			left: -6px;
+			display: block;
+			position: absolute;
+			top: 13px;
+		}
+	}
+}
+
+.close_header_login, .close_header_register {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	padding: 2px 0 0 4px;
+	display: block;
+	width: 21px;
+	height: 21px;
+	margin: 12px 0;
+	cursor: pointer;
+	float: right;
+}
+
+#login {
+	background: $colorHalfBlack;
+	padding: 45px 0;
+	.login-text {
+		margin-top: 15px;
+		width: 69%;
+	}
+	.OR {
+		position: relative;
+		margin: 9px 0;
+		span {
+			background: $colorHalfBlack;
+			position: relative;
+			z-index: 10;
+			padding: 9px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			background: #a5a5a5;
+			width: 100%;
+			height: 1px;
+			top: 8px;
+			left: 0;
+		}
+	}
+	.fb-login {
+		a {
+			color: #fff;
+		}
+		i {
+			color: #fff;
+			background: #4f68b3;
+			font-size: 18px;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			padding: 12px 0 0 15px;
+			margin-right: 12px;
+		}
+	}
+	.login-form {
+		margin: 9px 0;
+		position: relative;
+		input {
+			width: 100%;
+			background: $colorGrey;
+			color: #000;
+			height: 45px;
+			margin-bottom: 15px;
+			border: none;
+			padding: 9px;
+			&[type="password"] {
+				padding-right: 88px;
+			}
+		}
+		.login-btn {
+			position: absolute;
+			bottom: 15px;
+			right: 0;
+			height: 45px;
+			background: #fff;
+			border: none;
+			padding: 0 21px;
+			&:before {
+				content: "";
+				width: 15px;
+				height: 15px;
+				-webkit-transform: rotateZ(45deg);
+				transform: rotateZ(45deg);
+				background: #fff;
+				left: -6px;
+				display: block;
+				position: absolute;
+				top: 13px;
+			}
+		}
 	}
 }

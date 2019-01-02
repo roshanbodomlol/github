@@ -13,11 +13,13 @@ $(document).ready(function() {
   populatePlayDays();
   directorySubMenuDimensions();
   searchSubMenuDimensions();
+  calendarSubMenuDimensions();
 });
 
 $(window).resize(function() {
   playmakerDimensions();
   directorySubMenuDimensions();
+  searchSubMenuDimensions();
 });
 
 // AJAX LOAD MORE
@@ -98,9 +100,20 @@ function searchSubMenuDimensions() {
   var liPosition = searchLi.getBoundingClientRect();
   var winWidth = $(window).width();
   var searchSubBoxWidth = winWidth - liPosition.x;
-  $('.search-sub').css('right', -1 * (winWidth - liPosition.x - $(searchLi).width()));
+  $('.search-sub').css('right', -1 * (winWidth - liPosition.x - $(searchLi).outerWidth()));
   $('.search-sub ._right, .search-sub ._left').width(searchSubBoxWidth);
   $('.search-sub ._advanced').width(winWidth - searchSubBoxWidth * 2);
+}
+
+function calendarSubMenuDimensions() {
+  var calendarLi = document.getElementById('calendar-menu');
+  var liPosition = calendarLi.getBoundingClientRect();
+  var winWidth = $(window).width();
+  var calendarSubBoxWidth = winWidth - liPosition.x;
+  $('.calendar-sub').css('right', -1 * (winWidth - liPosition.x - $(calendarLi).outerWidth()));
+  $('.calendar-sub ._right').width(calendarSubBoxWidth);
+  $('.calendar-sub').width(winWidth);
+  // $('.search-sub ._advanced').width(winWidth - searchSubBoxWidth * 2);
 }
 
 function enableAdvancedSearch() {
@@ -140,4 +153,28 @@ $('#openPlayMaker').click(function(e) {
 
 $('#playmaker ._close').click(function() {
   togglePlaymakerModal();
+});
+
+$('#header-calendar li').hover(function() {
+  if (!$(this).hasClass('active')) {
+    var index = $(this).data('index');
+    $('#header-calendar li, .calendar-sub ._slide').removeClass('active');
+    $('.calendar-sub ._slide[data-index="'+index+'"]').addClass('active');
+    $(this).addClass('active');
+  }
+}, function() {});
+
+$('#showlogin, .close_header_login').click(function(e) {
+  e.preventDefault();
+  $('#login-wrap').toggleClass('active');
+});
+
+$('.close_header_register').click(function(){
+  $('#register').slideUp(300);
+  $('#login').slideDown(300);
+});
+
+$('.register-link').click(function() {
+  $('#login').slideUp(300);
+  $('#register').slideDown(300);
 });
